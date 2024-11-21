@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "k8s-manifests-diff"
+version = "0.1.0"
+description = "Calculate the difference between two k8s manifests"
+authors = ["Dima Murzin <dima@murzin.life>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+PyYAML = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+ruff = "^0.7.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
